@@ -1,4 +1,5 @@
 # 2D Knights Platformer
+A basic guide to create a 2d platformer game in Godot.
 ## Original Creators Video Tutorial
 [Brackeys First Game Tutorial (Platformer)](https://youtu.be/LOhfqjmasi0?feature=shared)
 ## Try the game
