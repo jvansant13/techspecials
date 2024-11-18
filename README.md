@@ -7,5 +7,5 @@ Tutorials for each of the games can be found on their creators youtube page.
 [DevWorms Top Down RPG Series](https://youtube.com/playlist?list=PL3cGrGHvkwn0zoGLoGorwvGj6dHCjLaGd&feature=shared)\
 
 
-To play these games click on these links:
-\t[2D Knights Platformer (Brackeys)](https://jvansant13.github.io/Technology-Specials/2dKnightsPlatformer/Game/)
+To play these games click on these links:\
+[2D Knights Platformer (Brackeys)](https://jvansant13.github.io/Technology-Specials/2dKnightsPlatformer/Game/)
