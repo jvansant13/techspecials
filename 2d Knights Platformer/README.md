@@ -1,6 +1,6 @@
 # 2D Knights Platformer
-## Original Tutorial
-
+## Original Creators Video Tutorial
+[Brackeys First Game Tutorial (Platformer)](https://youtu.be/LOhfqjmasi0?feature=shared)
 ## Try the game
 [2D Knights Platformer (Brackeys)](https://jvansant13.github.io/Technology-Specials/2d%20Knights%20Platformer/Game/)
 ## Lessons
