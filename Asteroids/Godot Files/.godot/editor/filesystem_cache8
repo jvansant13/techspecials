@@ -1,0 +1,40 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1731942420
+icon.svg::CompressedTexture2D::5236188539585448127::1731942020::1731942058::1::::<><>::
+::res://assets/::1731942241
+::res://assets/audio/::1731942241
+explode.wav::AudioStreamWAV::2249837867060820495::1731942020::1731942058::1::::<><>::
+hit.wav::AudioStreamWAV::7558667874055153770::1731942020::1731942058::1::::<><>::
+sfx_laser1.wav::AudioStreamWAV::7698558246249227973::1731942020::1731942058::1::::<><>::
+sfx_laser2.wav::AudioStreamWAV::9063987788252338569::1731942020::1731942058::1::::<><>::
+::res://assets/font/::1731942241
+Kenney Blocks.ttf::FontFile::8733539108262013851::1731942020::1731942058::1::::<><>::
+::res://assets/textures/::1731942241
+laserBlue01.png::CompressedTexture2D::7926547921818068906::1731942020::1731942058::1::::<><>::
+meteorGrey_big4.png::CompressedTexture2D::5952435442209874269::1731942020::1731942058::1::::<><>::
+meteorGrey_med2.png::CompressedTexture2D::2430598078434390086::1731942020::1731942058::1::::<><>::
+meteorGrey_tiny1.png::CompressedTexture2D::9083836022392381381::1731942020::1731942058::1::::<><>::
+playerLife1_blue.png::CompressedTexture2D::2448063566160328500::1731942020::1731942058::1::::<><>::
+player_ship.png::CompressedTexture2D::247510303234878050::1731942020::1731942058::1::::<><>::
+ufoGreen.png::CompressedTexture2D::500560926921786774::1731942020::1731942058::1::::<><>::
+::res://resources/::1731942241
+asteroid_cshape_large.tres::CircleShape2D::5797069925198790699::1731942020::0::1::::<><>::
+asteroid_cshape_medium.tres::CircleShape2D::7349319226900157350::1731942020::0::1::::<><>::
+asteroid_cshape_small.tres::CircleShape2D::7094691020715641579::1731942020::0::1::::<><>::
+::res://scenes/::1731942241
+asteroid.tscn::PackedScene::2932508990634285262::1731942020::0::1::::<><>::res://scripts/asteroid.gd<>uid://cnpplq6jni0jj::::res://assets/textures/meteorGrey_big4.png<>uid://coue5ojrgegyd::::res://resources/asteroid_cshape_large.tres
+game.tscn::PackedScene::2257962728223183561::1731942060::0::1::::<><>::res://scripts/game.gd<>uid://1wnfmblulhx0::::res://scenes/player.tscn<>uid://cyg1avbtmwoj7::::res://scenes/hud.tscn<>uid://bh1r82178c2u1::::res://scenes/asteroid.tscn<>uid://dwwjje64opjab::::res://scenes/game_over_screen.tscn<>uid://bxpqhkwbma8la::::res://scenes/player_spawn_area.tscn<>uid://dhxien0sa2jnp::::res://assets/audio/sfx_laser1.wav<>uid://dfxqfj20yr0ty::::res://assets/audio/hit.wav<>uid://7b3rbd6wftxn::::res://assets/audio/explode.wav
+game_over_screen.tscn::PackedScene::8749395706104646365::1731942020::0::1::::<><>::res://scripts/game_over_screen.gd<>uid://kg4ee0vqjwuo::::res://assets/font/Kenney Blocks.ttf
+hud.tscn::PackedScene::6471339628450613786::1731942020::0::1::::<><>::res://scripts/hud.gd<>uid://kg4ee0vqjwuo::::res://assets/font/Kenney Blocks.ttf
+laser.tscn::PackedScene::7907624948811788013::1731942020::0::1::::<><>::res://scripts/laser.gd<>uid://cal1swikm2qc2::::res://assets/textures/laserBlue01.png
+player.tscn::PackedScene::1871125127405609339::1731942020::0::1::::<><>::uid://464a1dlcf5rg::::res://assets/textures/player_ship.png<>res://scripts/player.gd
+player_spawn_area.tscn::PackedScene::4032714285401048794::1731942020::0::1::::<><>::res://scripts/player_spawn_area.gd
+ui_life.tscn::PackedScene::4504493439304993398::1731942020::0::1::::<><>::uid://bifn8ruxn13yb::::res://assets/textures/playerLife1_blue.png
+::res://scripts/::1731942241
+asteroid.gd::GDScript::-1::1731942020::0::1::::Asteroid<>Area2D<>::
+game.gd::GDScript::-1::1731942020::0::1::::<>Node2D<>::
+game_over_screen.gd::GDScript::-1::1731942020::0::1::::<>Control<>::
+hud.gd::GDScript::-1::1731942020::0::1::::<>Control<>::
+laser.gd::GDScript::-1::1731942020::0::1::::<>Area2D<>::
+player.gd::GDScript::-1::1731942020::0::1::::Player<>CharacterBody2D<>::
+player_spawn_area.gd::GDScript::-1::1731942020::0::1::::<>Area2D<>::

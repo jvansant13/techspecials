@@ -1,0 +1,11 @@
+res://resources/asteroid_cshape_large.tres::6e9a960744cedf94eca68df7d5464aae::1731942020::res://.godot/exported/133200997/export-764eb01a1df41832d5d08782bbb03f2a-asteroid_cshape_large.res
+res://resources/asteroid_cshape_medium.tres::9e293b29a331c585b921ab98d316ad8c::1731942020::res://.godot/exported/133200997/export-55b69b617f42cef3adaabb85fb5e2b30-asteroid_cshape_medium.res
+res://resources/asteroid_cshape_small.tres::098d153ecab72250783c2dbc0de0d313::1731942020::res://.godot/exported/133200997/export-790c19f9ebbcc6f37309570dfdbda2ed-asteroid_cshape_small.res
+res://scenes/asteroid.tscn::67e238e31e10e2f6149d15a7aeeb2be4::1731942020::res://.godot/exported/133200997/export-77e02d809253e7327db0f2ff299bab2a-asteroid.scn
+res://scenes/game.tscn::eaf51fc3bbe9846d76d5cfde5dd79975::1731942060::res://.godot/exported/133200997/export-c2a7af834e91ff64325daddf58e45dc0-game.scn
+res://scenes/game_over_screen.tscn::91eb779fd3d62d0485f1fd3491fe337b::1731942020::res://.godot/exported/133200997/export-e22825d93e7ddd42eb50ee3deead56b6-game_over_screen.scn
+res://scenes/hud.tscn::0424ccd619fa81dbb7683b501d85f265::1731942020::res://.godot/exported/133200997/export-38bf74ff262409a94a41206b2b776d33-hud.scn
+res://scenes/laser.tscn::cf0ffbb6100df051eb32cc5defd95184::1731942020::res://.godot/exported/133200997/export-7ea66689adea2f221421049858cbe224-laser.scn
+res://scenes/player.tscn::3230b842ad6881089d9bc0d05098bf68::1731942020::res://.godot/exported/133200997/export-234fb6894ec6226e856ab7f825500d3d-player.scn
+res://scenes/player_spawn_area.tscn::e5136e8bf6b413ff3460e353bbe814d7::1731942020::res://.godot/exported/133200997/export-773d68ad7353cfc1340d6363cb6eb39b-player_spawn_area.scn
+res://scenes/ui_life.tscn::94d4b8abee6281e9167eea02810b2124::1731942020::res://.godot/exported/133200997/export-160700c837056c2fbd8ad8184ca1ad7a-ui_life.scn
