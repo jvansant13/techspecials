@@ -1,10 +1,7 @@
 # 2D Knights Platformer
-
-Here is the link to try the game:\
+## Try the game
 [2D Knights Platformer (Brackeys)](https://jvansant13.github.io/Technology-Specials/2d%20Knights%20Platformer/Game/)
-
-
-Here are links to the lessons:
+##Lessons
 1. [Player 1.0]()
 2. [Worldbuilding 1.0]()
 3. [Platforms]()
