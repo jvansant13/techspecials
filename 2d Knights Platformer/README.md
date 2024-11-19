@@ -48,8 +48,14 @@ To create a Player first you'll need to create a [Game Node](https://github.com/
 
 ### Creating Game Node
 To create the Game Scene:
+
 - First you'll need to create a new Node2D and name it "Game"
+- ![Game_Node_1](https://github.com/user-attachments/assets/0d6e342d-851d-4eb4-b0ab-26a57943a594)
+- ![Game_node_2](https://github.com/user-attachments/assets/f50c5f41-b98d-4224-8065-86b521b5e42d)
+- ![Game_node_3](https://github.com/user-attachments/assets/9d6535a1-f811-41f2-9616-0f2acab8d89f)
 - save the scene or use "CTRL + S" and navigate to the "scenes folder"(if you don't have one, make it) and save it as "game.tscn"
+- ![Game_node_4](https://github.com/user-attachments/assets/c06e2e8b-6e7e-4242-a24d-b6fea78efdc0)
+- ![Game_node_5](https://github.com/user-attachments/assets/0171c67e-7032-483c-8980-885c366eccde)
 
 ### Create a Charater(Player, NPC, or Enemy)
 You can either create a new scene by clicking the new tab button at the top of the view port or add the node to the game.tscn and save it later as a scene
