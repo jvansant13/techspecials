@@ -5,8 +5,8 @@ A basic guide to create a 2d platformer game in Godot.
 ## Try the game
 [2D Knights Platformer (Brackeys)](https://jvansant13.github.io/Technology-Specials/2d%20Knights%20Platformer/Game/)
 ## File download link
-- [Blank Asset Template](https://github.com/jvansant13/Technology-Specials/raw/refs/heads/main/Asset%20templates/2d_platformer_template.zip)
-- [Full game files](https://github.com/jvansant13/Technology-Specials/raw/refs/heads/main/2d%20Knights%20Platformer/2d%20Knights%20Platformer.zip)
+- [Blank Asset Template](https://github.com/jvansant13/Technology-Specials/raw/refs/heads/main/Templates/Asset%20templates/2d_platformer_template.zip)
+- [Full game files](https://github.com/jvansant13/Technology-Specials/raw/refs/heads/main/Templates/Game%20templates/2d%20Knights%20Platformer.zip)
 ## Lessons
 1. [Player 1.0]()
 2. [Worldbuilding 1.0]()
