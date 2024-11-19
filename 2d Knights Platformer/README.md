@@ -24,7 +24,7 @@ A basic guide to create a 2d platformer game in Godot.
 ## Tutorial
 ### Player 1.0
 [Video](https://www.youtube.com/watch?v=LOhfqjmasi0&t=451s)\
-To create a Player first you'll need to create a [Game Node](https://github.com/jvansant13/Technology-Specials/blob/main/2d%20Knights%20Platformer/README.md#creating-game-node) then you can follow the steps outlined in [Create a Character](https://github.com/jvansant13/Technology-Specials/blob/main/2d%20Knights%20Platformer/README.md#create-a-charaterplayer-npc-or-enemy)
+To create a Player first you'll need to create a [Game Node](https://github.com/jvansant13/Technology-Specials/blob/main/Tutorials/GeneralGame.md#creating-game-node) then you can follow the steps outlined in [Create a Character](https://github.com/jvansant13/Technology-Specials/blob/main/Tutorials/GeneralGame.md#create-a-charaterplayer-npc-or-enemy)
 ### Worldbuilding 1.0
 [Video](https://www.youtube.com/watch?v=LOhfqjmasi0&t=1017s)\
 ### Platforms
