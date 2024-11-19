@@ -14,3 +14,7 @@ To play these games click on these links:
 - [2D Knights Platformer](https://jvansant13.github.io/Technology-Specials/2d%20Knights%20Platformer/Game)
 - [2D RPG Mystic Woods]()
 - [2D Asteroids](https://jvansant13.github.io/Technology-Specials/Asteroids/Game)
+
+## Asset Templates
+![image](https://github.com/user-attachments/assets/e2114dad-b3e8-443c-ad7d-d64c2a401caf)
+[Pixel Adventure Asset Template](https://github.com/jvansant13/Technology-Specials/raw/refs/heads/main/Templates/Asset%20templates/pixel-adventure.zip)
