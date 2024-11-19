@@ -25,6 +25,7 @@ To create the Game Scene:
 - First you'll need to create a new Node2D and name it "Game"
 - save the scene or use "CTRL + S" and navigate to the "scenes folder"(if you don't have one, make it) and save it as "game.tscn"
 ### Player 1.0
+To create a Player first you'll need to create a [Game Node](https://github.com/jvansant13/Technology-Specials/blob/main/2d%20Knights%20Platformer/README.md#creating-game-node) then you can follow the steps outlined in [Create a Character](https://github.com/jvansant13/Technology-Specials/blob/main/2d%20Knights%20Platformer/README.md#create-a-charaterplayer-npc-or-enemy) 
 - At the top of the view port click new tab "+"
 
 ### Create a Charater(Player, NPC, or Enemy)
