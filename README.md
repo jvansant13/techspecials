@@ -24,13 +24,13 @@ To play these games click on these links:
 ![image](https://github.com/user-attachments/assets/d5c2d601-3865-48fa-9ac6-8f9b8585083f)\
 [Treasure Hunters Asset Template](https://github.com/jvansant13/Technology-Specials/raw/refs/heads/main/Templates/Asset%20templates/treasure-hunters.zip)\
 ![image](https://github.com/user-attachments/assets/5b1884e5-c625-4d5b-86a5-17d640061e52)\
-[Knights Platformer Asset Template](https://github.com/jvansant13/Technology-Specials/raw/refs/heads/main/Templates/Asset%20templates/2d_platformer_template.zip)\
+[Knights Platformer Asset Template](https://github.com/jvansant13/Technology-Specials/raw/refs/heads/main/Templates/Asset%20templates/2d_platformer_template.zip)
 
 ### Top Down
 ![image](https://github.com/user-attachments/assets/e99cf9c0-19d2-4492-838e-c41c35907b74)\
 [Ninja Adventure Asset Template](https://github.com/jvansant13/Technology-Specials/raw/refs/heads/main/Templates/Asset%20templates/ninja-adventure.zip)\
 ![image](https://github.com/user-attachments/assets/99dfa237-9f51-43ff-a66d-c518a7b78a74)\
-[Tiny Swords Asset Template](https://github.com/jvansant13/Technology-Specials/raw/refs/heads/main/Templates/Asset%20templates/tiny-swords.zip)\
+[Tiny Swords Asset Template](https://github.com/jvansant13/Technology-Specials/raw/refs/heads/main/Templates/Asset%20templates/tiny-swords.zip)
 
 
 
