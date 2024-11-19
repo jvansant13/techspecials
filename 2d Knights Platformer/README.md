@@ -19,3 +19,15 @@ A basic guide to create a 2d platformer game in Godot.
 9. [Player 2.0]()
 10. [Text, Score, Audio]()
 11. [Export]()
+
+### Creating Game Node
+To create the Game Scene:
+- First you'll need to create a new Node2D and name it "Game"
+- save the scene or use "CTRL + S" and navigate to the "scenes folder"(if you don't have one, make it) and save it as "game.tscn"
+### Player 1.0
+- At the top of the view port click new tab "+"
+
+### Create a Charater(Player, NPC, or Enemy)
+You can either create a new scene by clicking the new tab button at the top of the view port or add the node to the game.tscn and save it later as a scene
+- At the top of the view port click new tab "+"
+
