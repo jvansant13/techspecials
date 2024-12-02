@@ -17,7 +17,7 @@ To play these games click on these links:
 
 
 ## Tutorials
-[Top-Down Tutorials]()
+[Knight Platformer Tutorial]()
 
 ## Asset Templates
 ### Platformer
