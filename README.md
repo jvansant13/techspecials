@@ -12,7 +12,7 @@ Tutorials for each of the games can be found on their creators youtube page.
 ## Try the Game
 To play these games click on these links:
 - [2D Knights Platformer](https://jvansant13.github.io/Technology-Specials/2d%20Knights%20Platformer/Game)
-- [2D RPG Mystic Woods]()
+[//]: #  - [2D RPG Mystic Woods]()
 - [2D Asteroids](https://jvansant13.github.io/Technology-Specials/Asteroids/Game)
 
 ## Asset Templates
