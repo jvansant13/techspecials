@@ -4,8 +4,8 @@ The purpose of this github page is to help teach students concepts of game makin
 Click the link to try these games.
 - [2D Knights Platformer](https://jvansant13.github.io/Technology-Specials/2d%20Knights%20Platformer/Game)
 - [2D Asteroids](https://jvansant13.github.io/Technology-Specials/Asteroids/Game)
-<!--
-## Description
+<!-- 
+(## Description
 This is a layout of the projects currently in the tech specials repository.\
 Tutorials for each of the games can be found on their creators youtube page.
 ## Credits
@@ -40,7 +40,7 @@ To play these games click on these links:
 ![image](https://github.com/user-attachments/assets/e99cf9c0-19d2-4492-838e-c41c35907b74)\
 [Ninja Adventure Asset Template](https://github.com/jvansant13/Technology-Specials/raw/refs/heads/main/Templates/Asset%20templates/ninja-adventure.zip)\
 ![image](https://github.com/user-attachments/assets/99dfa237-9f51-43ff-a66d-c518a7b78a74)\
-[Tiny Swords Asset Template](https://github.com/jvansant13/Technology-Specials/raw/refs/heads/main/Templates/Asset%20templates/tiny-swords.zip)
--->
+[Tiny Swords Asset Template](https://github.com/jvansant13/Technology-Specials/raw/refs/heads/main/Templates/Asset%20templates/tiny-swords.zip))
+->
 
 
