@@ -77,7 +77,6 @@ nav .menu a:hover{
 main {
     width: 100%;
     text-align: left;
-    justify-items: center;
 }
 
 section {
@@ -87,8 +86,14 @@ section {
 h2 {
     color: #005fa3;
 }
+.videos {
+    width: 100%;
+    margin: 1rem;
+    justify-content: space-between;
+}
 
 .game-container {
+    margin: 1rem;
     display: flex;
     gap: 1rem;
 }
@@ -109,6 +114,7 @@ h2 {
 
 iframe {
     width: 30%;
+    height: 12rem;
     border: 1px solid #ccc;
 }
 
