@@ -1,5 +1,9 @@
 /* styles.css */
+
 body {
+    display: flex;
+    box-sizing:content-box;
+    padding: 0;
     font-family: Arial, sans-serif;
     margin: 0;
     background-color: #f0f8ff;
@@ -12,11 +16,52 @@ header {
     text-align: center;
     padding: 1rem;
 }
+a {
+    text-decoration: none;
+    color: #000;
+}
 
 nav {
+    height: 100dvh;
+    width: 15dvw;
+    display: flex;
+    flex-direction: column;
     background-color: #005fa3;
     color: white;
-    padding: 0.5rem 1rem;
+}
+nav img {
+    width: 50%;
+}
+nav .title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 1000;
+    width: 100%;
+    height: 12rem;
+}
+nav .menu {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+nav .menu a {
+    height: 3rem;
+    width: 15dvw;
+    padding-right: 1rem;
+    text-align: right;
+    align-content: center;
+    border-radius: 0.5rem;
+    color: white;
+    font-weight: 1000;
+    font-size: 1.3rem;
+}
+nav .menu a:hover{
+    background-color: white;
+    color: black;
 }
 
 nav ul {
