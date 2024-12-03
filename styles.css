@@ -1,5 +1,6 @@
 /* styles.css */
 
+
 body {
     display: flex;
     box-sizing:border-box;
@@ -8,6 +9,13 @@ body {
     margin: 0;
     background-color: #deecf8;
     color: #333;
+}
+.content {
+    display: flex;
+    flex-direction: column;
+    margin-left: 15dvw;
+    width: 85dvw;
+    box-sizing: border-box;
 }
 
 header {
@@ -66,29 +74,10 @@ nav .menu a:hover{
     color: black;
 }
 
-nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    margin: 0;
-    padding: 0;
-}
-
-nav ul li {
-    margin: 0 1rem;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-}
-
 main {
     width: 100%;
     text-align: left;
     justify-items: center;
-    padding: 1rem;
 }
 
 section {
@@ -120,17 +109,9 @@ h2 {
 
 iframe {
     width: 30%;
-    height: 300px;
     border: 1px solid #ccc;
 }
-.content {
-    display: flex;
-    flex-direction: column;
-    margin-left: 15dvw;
-    width: 85dvw;
-    box-sizing: border-box;
-    border: red solid 2px;
-}
+
 
 footer {
     background-color: #0077cc;
