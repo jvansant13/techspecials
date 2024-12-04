@@ -3,55 +3,94 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Davinci Games</title>
-    <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="static/images/blue_logo.png">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/theme.css">
+    <script src="https://kit.fontawesome.com/cb1c144ff3.js" crossorigin="anonymous"></script>
+    <title>Davinci Games - Tech Specials</title>
 </head>
 <body>
-    <nav>
-        <div class="title">
-            <img src="static/images/black_logo.png" alt="Davinci Logo">
-            Davinci Games
+    <div class="headerbar">
+        Header
+    </div>
+    <div class="mainContent">
+        <div class="mainNav">
+            <div class="navoption">
+                <a href="index.html">
+                    <i class="fa-solid fa-house"></i>
+                    Home
+                </a>
+            </div>
+            <div class="navoption">
+                <a href="#">
+                    <i class="fa-solid fa-book"></i>
+                    Documentation
+                </a>
+            </div>
+            <div class="navoption">
+                <a href="#">
+                    <i class="fa-solid fa-scroll"></i>
+                    Scripts
+                </a>
+            </div>
+            <div class="navoption">
+                <a href="assets.html">
+                    <i class="fa-solid fa-gamepad"></i>
+                    Assets
+                </a>
+            </div>
         </div>
-        <div class="menu">
-            <a href="#">Home</a>
-            <a href="#Games">Games</a>
-            <a href="#Documentation">Documentation</a>
-            <a href="#Assets">Asset Templates
-            </a>
-        </div>
-    </nav>
-    <div class="content">
-        <header>
-            This is a header
-        </header>
-        <main>
-            <section id="tutorials">
-                <h2>Tutorials</h2>\
-                <div class="videos">
-                    <iframe src="https://www.youtube.com/embed/LOhfqjmasi0?si=0dj7RK-dwQ-kwnM7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                    <iframe src="https://www.youtube.com/embed/FmIo8iBV1W8?si=5OJbH3eWcjw-NN5D" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                    <iframe src="https://www.youtube.com/embed/videoseries?si=FlrMbDbHmfHUAlF2&amp;list=PL3cGrGHvkwn0zoGLoGorwvGj6dHCjLaGd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <div class="content">
+            <div class="topheader">
+                <h1>Welcome to DaVinci Academy Tech Specials</h1>
+                Providing assets, games,tutorials and documentation
+            </div>
+            <div class="videobararea">
+                <h2>Tutorials</h2>
+                <div class="videobar">
+                    <div class="video">
+                        <iframe src="https://www.youtube.com/embed/LOhfqjmasi0?si=0dj7RK-dwQ-kwnM7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <div class="videoDescription">
+                            <h3>Brackeys: How to make a video game</h3>
+                            Brackeys takes you through a tutorial making a basic platformer. 
+                            <a href="https://github.com/jvansant13/Technology-Specials/raw/refs/heads/main/Templates/Asset%20templates/2d_platformer_template.zip">Godot file with assets loaded</a>
+                        </div>
+                       
+                    </div>
+                    <div class="video">
+                        <iframe src="https://www.youtube.com/embed/FmIo8iBV1W8?si=5OJbH3eWcjw-NN5D" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <div class="videoDescription">
+                            <h3>Kaan Alpar: How To Make Asteroids in Godot 4 (Complete Tutorial)</h3>
+                            Kann shows you how to make a basic shooter from the classic 2D atari game Asteroids.
+                            <a href="https://github.com/jvansant13/Technology-Specials/raw/refs/heads/main/Templates/Asset%20templates/pixel-adventure.zip">Godot file with assets loaded</a>
+                        </div>
+                    </div>
+                    <div class="video">
+                        <iframe src="https://www.youtube.com/embed/videoseries?si=FlrMbDbHmfHUAlF2&amp;list=PL3cGrGHvkwn0zoGLoGorwvGj6dHCjLaGd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
                 </div>
 
-            </section>
-            <section id="games">
+            </div>
+            <div class="videobararea">
                 <h2>Games</h2>
-                <div class="game-container">
-                    <a href="https://jvansant13.github.io/techspecials/2d%20Knights%20Platformer/Game">
-                        <img src="2d Knights Platformer/Godot Files/assets/knight_icon.png" alt="Knight Game" height="50" width="50">
-                        Knight Platformer(Brackeys)
-                    </a>
-                    <a href="https://jvansant13.github.io/techspecials/Asteroids/Game">
-                        <img src="Asteroids/Godot Files/assets/textures/player_ship.png" alt="Asteroid Game" height="50" width="50">
-                        Asteroids(Kaan Alpar)
-                    </a>
+                <div class="gamebar">
+                    <div class="game">
+                        <a href="https://jvansant13.github.io/techspecials/2d%20Knights%20Platformer/Game">
+                            <img src="static/images/knight_icon.png" alt="Knight Platformer">
+                            Platformer
+                        </a>
+                    </div>
+                    <div class="game">
+                        <a href="https://jvansant13.github.io/techspecials/Asteroids/Game">
+                            <img src="static/images/player_ship.png" alt="Astroids">
+                            Asteroids
+                        </a>
+
+                    </div>
                 </div>
-            <section id="Documentation">
-                <h2>Documentation</h2>
-                Here is a section for documentation
-            </section>
-        </main>
+
+            </div>
+        </div>
     </div>
 </body>
 </html>

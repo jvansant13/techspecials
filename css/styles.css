@@ -1,0 +1,139 @@
+body {
+    display: flex;
+    box-sizing: border-box;
+    font-size: var(--font-size);
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    background-color: blueviolet;
+    color: var(--color8);
+}
+h1 {
+    padding: 0;
+    margin: 0;
+}
+
+.headerbar{
+    position: fixed;
+    width: 100%;
+    height: 5rem;
+    background-color: var(--color2) ;
+}
+
+.mainNav {
+    box-sizing: border-box;
+    position: fixed;
+    width: 10rem;
+    background-color: var(--color4);
+    height: 100%;
+    color: var(--color7);
+    padding: 0.5rem;
+}
+
+.mainNav .navoption {
+    height: 3rem;
+    text-align: center;
+    align-content: center;
+}
+.mainNav .navoption a{
+    font-size: 1.2rem;
+    display: flex;
+    flex-direction: row;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    color: var(--color7);
+}
+.mainNav .navoption a i{
+    margin-right: 0.25rem;
+}
+.mainNav .navoption a:hover{
+    background-color: var(--color7);
+}
+
+.mainContent {
+    box-sizing: border-box;
+    padding-top: 5rem;
+    width: 100dvw;
+    height: 100dvh;
+    background-color: var(--color6);
+}
+.content {
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+    padding-left: 10rem;
+}
+.content .topheader {
+    align-content: center;
+    padding: 0;
+    margin: 0;
+    border-radius: 0.25rem;
+    box-sizing: border-box;
+    height: 8rem;
+    text-align: center;
+}
+.videobararea{
+    box-sizing: border-box;
+    background-color: var(--color7);
+    border-radius: 1rem;
+    padding: 1rem;
+    margin: 0.5rem;
+}
+.videobar {
+    display: flex;
+    justify-content: space-around;
+}
+
+.videobar .video {
+    box-sizing: border-box;
+    background-color: var(--color1);
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    border: var(--color8) solid 2px;
+    border-radius: 0.25rem;
+}
+.videoDescription {
+    box-sizing: border-box;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+}
+.video iframe{
+    height: 14rem;
+}
+.gamebar {
+    display: flex;
+    justify-content: baseline;
+}
+.game {
+    border-radius: 0.25rem;
+    align-content: center;
+    margin-left: 1rem;
+    width: 6rem;
+    height: 6rem;
+    background-color: var(--color1);
+    border: var(--color8) solid 2px;
+}
+.game a{
+    text-align: center;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 1rem;
+    text-decoration: none;
+    color: var(--color8);
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+.game a:hover{
+    background-color: var(--color2);
+}
+.game img {
+    height: 3rem;
+    width: 3rem;
+}
+
