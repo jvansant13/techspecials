@@ -1,56 +1,3 @@
-body {
-    display: flex;
-    box-sizing: border-box;
-    font-size: var(--font-size);
-    font-weight: 400;
-    margin: 0;
-    padding: 0;
-    background-color: blueviolet;
-    color: var(--color8);
-}
-h1 {
-    padding: 0;
-    margin: 0;
-}
-
-.headerbar{
-    position: fixed;
-    width: 100%;
-    height: 5rem;
-    background-color: var(--color2) ;
-}
-
-.mainNav {
-    box-sizing: border-box;
-    position: fixed;
-    width: 10rem;
-    background-color: var(--color4);
-    height: 100%;
-    color: var(--color7);
-    padding: 0.5rem;
-}
-
-.mainNav .navoption {
-    height: 3rem;
-    text-align: center;
-    align-content: center;
-}
-.mainNav .navoption a{
-    font-size: 1.2rem;
-    display: flex;
-    flex-direction: row;
-    padding: 0.5rem;
-    border-radius: 0.5rem;
-    text-decoration: none;
-    color: var(--color7);
-}
-.mainNav .navoption a i{
-    margin-right: 0.25rem;
-}
-.mainNav .navoption a:hover{
-    background-color: var(--color7);
-}
-
 .mainContent {
     box-sizing: border-box;
     padding-top: 5rem;
@@ -135,5 +82,27 @@ h1 {
 .game img {
     height: 3rem;
     width: 3rem;
+}
+.assetbar {
+    box-sizing: border-box;
+    padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+.assets {
+    border: var(--color8) solid 2px;
+    border-radius: 0.5rem;
+    margin-right: 1rem;
+    margin-bottom: 3rem;
+    box-sizing: border-box;
+    height: 13rem;
+    width: 18rem;
+    text-align: center;
+}
+
+.assets img{
+    border-radius: 0.25rem;
+    height: 100%;
+    width: 100%;
 }
 
