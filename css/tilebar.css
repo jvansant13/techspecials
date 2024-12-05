@@ -25,6 +25,7 @@
     flex-direction: column;
     border: black solid 2px;
     min-width: 20rem;
+    max-width: 35rem;
     background-color: var(--color05);
     border-radius: 1rem;
     box-sizing: border-box;
@@ -33,10 +34,15 @@
     justify-items: center;
     padding: 0.5rem;
 }
+.tile img{
+    width: 100%;
+    height: 12rem;
+}
 
 .tiledescription {
     box-sizing: border-box;
-    color: var(--color03);
+    color: var(--color02);
+    font-weight: 600;
     display: flex;
     height: 8rem;
     flex-direction: column;
@@ -73,18 +79,22 @@
 #icon {
     display: flex;
     flex-direction: column;
-    padding: 0;
+    padding: 0.5rem;
     flex: 1;
-    height: 10rem;
-    min-width: 20rem;
+    /* height: 10rem; */
+    /* min-width: 20rem; */
+    margin-bottom: 1.2rem;
 }
 #icon a {
     display: flex;
     justify-content: center;
     box-sizing: border-box;
-    padding: 1rem;
     border-radius: 1rem;
     height: 100%;
     width: 100%;
+}
+#icon img {
+    width: 100%;
+    border-radius: 1rem;
 }
 
