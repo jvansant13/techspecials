@@ -54,9 +54,9 @@
             </div>
             <div class="tilearea">
                 <h2>Scripts</h2>
-                <div class="tilebar">
+                <div class="codebar">
                     <div class="tile">
-                        <pre><code class="language-GDScript"> 
+                        <pre><code class="language-gdscript"> 
 @export var speed: float = 100.0
 @export var left_move: String = "ui_left"
 @export var right_move: String = "ui_right"
@@ -82,8 +82,126 @@ func controller_movement() -> void:
                     </div>
                     <div class="tile">
                         <pre>
-                            <code>
-                                print("hello world")
+                            <code class="language-gdscript">
+# Player State Machine
+extends CharacterBody2D
+
+
+# make sure to assign AnimatedSprite2D
+@export var sprite: AnimatedSprite2D
+@export var speed: float = 100.0
+@export var animation_speed: float = 1
+
+# assigns default keys for player movement, change string to update buttons
+@export var left_move: String = "ui_left"
+@export var right_move: String = "ui_right"
+@export var up_move: String = "ui_up"
+@export var down_move: String = "ui_down"
+@export var attack: String = "ui_accept"
+
+# States possible directions for player
+enum Direction {Left,Right,Up,Down}
+
+# States possible states that the player can be in
+enum State {Idle,Moving,Attack}
+
+
+# Assigns initial state and direction
+var current_direciton: Direction = Direction.Right
+var current_state: State = State.Idle
+
+
+func _physics_process(delta: float) -> void:
+	sprite.speed_scale = animation_speed
+	match current_state:
+		State.Idle:
+			idle_state()
+		State.Moving:
+			moving_state()
+		State.Attack:
+			attack_state()
+	move_and_slide()
+
+func idle_state():
+	get_idle_animations()
+	velocity = Vector2.ZERO
+	if Input.is_action_pressed(left_move or Input.is_action_pressed(right_move) or Input.is_action_pressed(up_move) or Input.is_action_pressed(down_move)):
+		current_state = State.Moving
+	elif Input.is_action_pressed("attack"):
+		current_state = State.Attack
+	else:
+		current_state = State.Idle
+	
+func moving_state():
+	get_direction()
+	get_walk_animations()
+	velocity = Input.get_vector(left_move,right_move,up_move,down_move) * speed
+	if Input.is_action_pressed("attack"):
+		current_state = State.Attack
+	elif !Input.is_anything_pressed():
+		current_state = State.Idle
+	
+	
+func attack_state():
+	get_attack_animations()
+	velocity = Vector2.ZERO
+	await sprite.animation_finished
+	current_state = State.Idle
+	
+	
+func get_direction():
+	if Input.is_action_pressed(left_move):
+		current_direciton = Direction.Left
+	elif Input.is_action_pressed(right_move):
+		current_direciton = Direction.Right
+	elif Input.is_action_pressed(up_move):
+		current_direciton = Direction.Up
+	elif Input.is_action_pressed(down_move):
+		current_direciton = Direction.Down
+
+		
+func get_idle_animations():
+	match current_direciton:
+		Direction.Left:
+			sprite.flip_h = true
+			sprite.play("side_idle")
+		Direction.Right:
+			sprite.flip_h = false
+			sprite.play("side_idle")
+		Direction.Up:
+			sprite.play("back_idle")
+		Direction.Down:
+			sprite.play("front_idle")
+
+func get_walk_animations():
+	match current_direciton:
+		Direction.Left:
+			sprite.flip_h = true
+			sprite.play("side_walk")
+		Direction.Right:
+			sprite.flip_h = false
+			sprite.play("side_walk")
+		Direction.Up:
+			sprite.play("back_walk")
+		Direction.Down:
+			sprite.play("front_walk")
+			
+
+func get_attack_animations():
+	match current_direciton:
+		Direction.Left:
+			sprite.flip_h = true
+			sprite.play("side_attack")
+		Direction.Right:
+			sprite.flip_h = false
+			sprite.play("side_attack")
+		Direction.Up:
+			sprite.play("back_attack")
+		Direction.Down:
+			sprite.play("front_attack")
+			
+
+		
                             </code>
                         </pre>
                     </div>
