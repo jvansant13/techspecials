@@ -20,3 +20,7 @@
     text-align: center;
 }
 
+pre {
+    background-color: var(--color05);
+}
+
