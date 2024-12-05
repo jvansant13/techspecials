@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="css/theme.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/tilebar.css">
+    <link rel="stylesheet" href="css/prism.css">
+    <script src="static/scripts/prism.js"></script>
     <script src="https://kit.fontawesome.com/cb1c144ff3.js" crossorigin="anonymous"></script>
     <title>Davinci Games - Tech Specials</title>
 </head>
@@ -54,13 +56,29 @@
                 <h2>Scripts</h2>
                 <div class="tilebar">
                     <div class="tile">
-                        <pre>
-                            <code>
-print("hello world")
-if x > 10:
-    do this
-                            </code>
-                        </pre>
+                        <pre><code class="language-GDScript"> 
+@export var speed: float = 100.0
+@export var left_move: String = "ui_left"
+@export var right_move: String = "ui_right"
+@export var up_move: String = "ui_up"
+@export var down_move: String = "ui_down"
+
+func _physics_process(delta: float) -> void:
+    controlled_movement()
+
+
+func controller_movement() -> void:
+    if Input.isActionPressed(left_move):
+        velocity = Vector2.LEFT * speed
+    elif Input.isActionPressed(right_move):
+        velocity = Vector2.RIGHT * speed
+    elif Input.isActionPressed(up_move):
+        velocity = Vector2.UP * speed
+    elif Input.isActionPressed(down_move):
+        velocity = Vector2.DOWN * speed
+    else:
+            velocity = Vector2.ZERO
+                        </code></pre>
                     </div>
                     <div class="tile">
                         <pre>
