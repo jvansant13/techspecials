@@ -55,7 +55,8 @@
             <div class="tilearea">
                 <h2>Scripts</h2>
                 <div class="codebar">
-                    <div class="tile">
+                    <div class="tile" id="codeblock">
+                        <h2>Basic Player Movement</h2>
                         <pre><code class="language-gdscript"> 
 # Basic Player Movement
 @export var speed: float = 100.0
@@ -81,7 +82,8 @@ func controller_movement() -> void:
             velocity = Vector2.ZERO
                         </code></pre>
                     </div>
-                    <div class="tile">
+                    <div class="tile" id="codeblock">
+                        <h2>Player State Machine</h2>
                         <pre>
                             <code class="language-gdscript">
 # Player State Machine
@@ -206,6 +208,23 @@ func get_attack_animations():
                             </code>
                         </pre>
                     </div>
+                    <!-- <div class="tile" id="codeblock">
+                        <h3>Code Title</h3>
+                        <pre><code class="language-gdscript">
+func get_attack_animations():
+    match current_direciton:
+        Direction.Left:
+            sprite.flip_h = true
+            sprite.play("side_attack")
+        Direction.Right:
+            sprite.flip_h = false
+            sprite.play("side_attack")
+        Direction.Up:
+            sprite.play("back_attack")
+        Direction.Down:
+            sprite.play("front_attack")
+                        </code></pre>
+                    </div> -->
                 </div>
             </div>
         </div>

@@ -102,11 +102,9 @@
 
 .codebar{
     display: flex;
-    flex-direction: column;
     box-sizing: border-box;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    align-items: center;
     height: 100%;
     width: 100%;
     padding: 1rem;
@@ -151,6 +149,11 @@
 .links a:hover{
     background-color: var(--color03);
     color: var(--color06)
+}
+
+#codeblock {
+    min-width: 30rem;
+    max-height: 30rem;
 }
 
 
