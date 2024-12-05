@@ -1,5 +1,7 @@
 :root {
     --font-size: 16px;
+    --navbar-width: 15rem;
+    --transition-time: 600ms;
 
     /* Color theme */
     --color1: #A9cef4;
@@ -10,7 +12,16 @@
     --color6: #ffffff;
     --color7: #d5dee7;
     --color8: #080B0C;
+
+    /* New Theme */
+    --color01: #fff;
+    --color02: #c1dcd2;
+    --color03: #9EC8B9;
+    --color04: #5C8374;
+    --color05: #1B4242;
+    --color06: #092635;
 }
+
 body {
     display: flex;
     box-sizing: border-box;
@@ -18,23 +29,26 @@ body {
     font-weight: 400;
     margin: 0;
     padding: 0;
-    background-color: blueviolet;
-    color: var(--color8);
+    background-color: var(--color06);
+    color: var(--color02);
 }
 h1 {
+    text-align: center;
     padding: 0;
     margin: 0;
 }
 h2 {
+    text-align: center;
     padding: 0;
     margin: 0;
 }
 h3 {
+    text-align: center;
     padding: 0;
     margin: 0;
 }
 
 a {
     text-decoration: none;
-    color: var(--color8);
+    color: var(--color02);
 }

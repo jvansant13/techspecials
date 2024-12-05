@@ -2,8 +2,8 @@
     position: fixed;
     width: 100%;
     height: 5rem;
-    background-color: var(--color2) ;
-    color: var(--color7);
+    background-color: var(--color04) ;
+    color: var(--color01);
     text-align: center;
     box-sizing: border-box;
     display: flex;
@@ -17,4 +17,43 @@
     width: 100%;
     text-align: center;
     align-content: center;
+}
+
+.mainNav {
+    box-sizing: border-box;
+    position: fixed;
+    width: var(--navbar-width);
+    background-color: var(--color05);
+    height: 100%;
+    color: var(--color02);
+    padding: 0.5rem;
+}
+
+.mainNav .navoption {
+    height: 3rem;
+    text-align: center;
+    align-content: center;
+}
+.mainNav .navoption a{
+    font-size: 1.2rem;
+    display: flex;
+    flex-direction: row;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    color: var(--color02);
+}
+.mainNav .navoption a i{
+    margin-right: 0.5rem;
+}
+
+.mainNav .navoption a.active {
+    background-color: var(--color04);
+    color: var(--color06);
+}
+
+.mainNav .navoption a:hover{
+    transition: var(--transition-time);
+    background-color: var(--color02);
+    color: var(--color05)
 }

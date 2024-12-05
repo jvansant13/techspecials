@@ -3,106 +3,20 @@
     padding-top: 5rem;
     width: 100dvw;
     height: 100dvh;
-    background-color: var(--color7);
+    background-color: var(--color06);
 }
 .content {
     box-sizing: border-box;
     height: 100%;
     width: 100%;
-    padding-left: 10rem;
+    padding-left: var(--navbar-width);
 }
 .content .topheader {
     align-content: center;
-    padding: 0;
+    padding: 1rem;
     margin: 0;
     border-radius: 0.25rem;
     box-sizing: border-box;
-    height: 8rem;
     text-align: center;
-}
-.videobararea{
-    box-sizing: border-box;
-    background-color: var(--color7);
-    border-radius: 1rem;
-    padding: 1rem;
-    margin: 0.5rem;
-}
-.videobar {
-    display: flex;
-    justify-content: space-around;
-}
-
-.videobar .video {
-    box-sizing: border-box;
-    background-color: var(--color1);
-    display: flex;
-    flex-direction: column;
-    width: 30%;
-    border: var(--color8) solid 2px;
-    border-radius: 0.25rem;
-}
-.videoDescription {
-    box-sizing: border-box;
-    padding: 0.5rem;
-    display: flex;
-    flex-direction: column;
-}
-.video iframe{
-    height: 14rem;
-}
-.gamebar {
-    display: flex;
-    justify-content: baseline;
-}
-.game {
-    border-radius: 0.25rem;
-    align-content: center;
-    margin-left: 1rem;
-    width: 6rem;
-    height: 6rem;
-    background-color: var(--color1);
-    border: var(--color8) solid 2px;
-}
-.game a{
-    text-align: center;
-    align-items: center;
-    box-sizing: border-box;
-    padding: 1rem;
-    text-decoration: none;
-    color: var(--color8);
-    font-size: 1rem;
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    width: 100%;
-}
-.game a:hover{
-    background-color: var(--color2);
-}
-.game img {
-    height: 3rem;
-    width: 3rem;
-}
-.assetbar {
-    box-sizing: border-box;
-    padding: 1rem;
-    display: flex;
-    flex-wrap: wrap;
-}
-.assets {
-    border: var(--color8) solid 2px;
-    border-radius: 0.5rem;
-    margin-right: 1rem;
-    margin-bottom: 3rem;
-    box-sizing: border-box;
-    height: 13rem;
-    width: 18rem;
-    text-align: center;
-}
-
-.assets img{
-    border-radius: 0.25rem;
-    height: 100%;
-    width: 100%;
 }
 
