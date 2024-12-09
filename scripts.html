@@ -208,21 +208,30 @@ func get_attack_animations():
                             </code>
                         </pre>
                     </div>
+                    <div class="tile" id="codeblock">
+                        <h3>Basic Controlled Movement(Top-Down)</h3>
+                        <pre><code class="language-gdscript">
+extends CharacterBody2D
+
+# Can be adjusted in inspector window
+@export var speed: float = 100
+
+# Replace "ui_direction" with name of input mapping.
+@export var left_action: String = "ui_left"
+@export var right_action: String = "ui_right"
+@export var up_action: String = "ui_up"
+@export var down_action: String = "ui_down"
+
+func _physics_process(delta: float) -> void:
+    velocity = Input.get_vector(left_action,right_action,up_action,down_action) * speed
+    move_and_slide()
+                            
+                        </code></pre>
+                    </div>
                     <!-- <div class="tile" id="codeblock">
                         <h3>Code Title</h3>
                         <pre><code class="language-gdscript">
-func get_attack_animations():
-    match current_direciton:
-        Direction.Left:
-            sprite.flip_h = true
-            sprite.play("side_attack")
-        Direction.Right:
-            sprite.flip_h = false
-            sprite.play("side_attack")
-        Direction.Up:
-            sprite.play("back_attack")
-        Direction.Down:
-            sprite.play("front_attack")
+# Code here                           
                         </code></pre>
                     </div> -->
                 </div>
