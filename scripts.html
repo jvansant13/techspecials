@@ -228,6 +228,25 @@ func _physics_process(delta: float) -> void:
                             
                         </code></pre>
                     </div>
+                    <div class="tile" id="codeblock">
+                        <h3>Mason's window wrap logic</h3>
+                        <pre><code class="language-gdscript">
+func _physics_process(delta):
+    global_position += movement_vector.rotated(rotation) * speed * delta
+    global_position += movement_vector.rotated(rotation) * speed * delta
+    
+    var radius = 0
+    var screen_size = get_viewport_rect().size
+    if (global_position.y+radius) < 0:
+        global_position.y = (screen_size.y+radius)
+    elif (global_position.y-radius) > screen_size.y:
+        global_position.y = -radius
+    if (global_position.x+radius) < 0:
+        global_position.x = (screen_size.x+radius)
+    elif (global_position.x-radius) > screen_size.x:
+        global_position.x = -radius                        
+                        </code></pre>
+                    </div>                    
                     <!-- <div class="tile" id="codeblock">
                         <h3>Code Title</h3>
                         <pre><code class="language-gdscript">
