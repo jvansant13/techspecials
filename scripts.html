@@ -246,7 +246,112 @@ func _physics_process(delta):
     elif (global_position.x-radius) > screen_size.x:
         global_position.x = -radius                        
                         </code></pre>
-                    </div>                    
+                    </div>
+                      <div class="tile" id="codeblock">
+                        <h3>Basic Enemy State(Idle, Chase, Attack)</h3>
+                        <pre><code class="language-gdscript">
+extends CharacterBody2D
+class_name Enemy_Top_Down
+
+
+
+################################################################################
+# This script is incomplete, the enemy will chase a player if too close and will
+# stop if too far, the enemy will also attack if in range and go back to chase 
+# if too far. This script needs work on the animations side of things, and then
+# some conditions to make attack possible. 
+################################################################################
+
+
+# These need to be set in the inspector window
+@export var chase_area: Area2D
+@export var attack_area: Area2D
+@export var sprite: AnimatedSprite2D
+
+# these variable should be fine but can be adjusted for better gameplay.
+var animation_speed: float = 1.5
+var speed: float = 50
+
+# this variable is used to track the player once they entered the chase circle
+var player: Node2D
+
+# this lists off possible states for the enemy
+enum States{Idle, Chase, Attack}
+# this variable keeps track of current state and sets initially to idle
+var current_state: States = States.Idle
+
+
+# This is important, godot likes to use none signals to connect conditions from
+# one node to another node. it is in the format:
+#								nodeVariable.connect("signalName", functionName)
+# if this command wasn't here you would have to use the node panel in the inspector
+# window to connect each node to this script with a signal. These lines make it 
+# easier to copy and paste. 
+func _ready() -> void:
+    sprite.speed_scale = animation_speed # increases animation speed to variable listed above
+    
+    # signal connections
+    chase_area.connect("body_entered", _on_chase_area_2d_body_entered)
+    attack_area.connect("body_entered", _on_attack_area_2d_body_entered)
+    chase_area.connect("body_exited", _on_chase_area_2d_body_exited)
+    attack_area.connect("body_exited", _on_attack_area_2d_body_exited)
+
+
+
+# Every frame states are checked and functions ran
+func _physics_process(delta: float) -> void:
+    match current_state:
+        States.Idle:
+            idle_state()
+        States.Chase:
+            chase_state()
+        States.Attack:
+            attack_state()
+    move_and_slide()
+
+
+func idle_state():
+    velocity = Vector2.ZERO
+    # need to update animations here
+    sprite.play("side_idle")
+    
+    
+func chase_state():
+    sprite.play("side_walk")
+    # need to update animations here
+    velocity = (player.global_position - global_position).normalized() * speed
+    
+    
+func attack_state():
+    velocity = Vector2.ZERO
+    # need to update animations here
+    sprite.play("side_attack")
+
+
+func _on_chase_area_2d_body_entered(body: Node2D) -> void:
+    if body.is_in_group("player"):
+        current_state = States.Chase
+        player = body
+        
+        
+func _on_attack_area_2d_body_entered(body: Node2D) -> void:
+    if body.is_in_group("player"):
+        current_state = States.Attack
+        
+        
+func _on_chase_area_2d_body_exited(body: Node2D) -> void:
+    if body.is_in_group("player"):
+        current_state = States.Idle
+        player = null
+        
+
+
+func _on_attack_area_2d_body_exited(body: Node2D) -> void:
+    if body.is_in_group("player"):
+        current_state = States.Chase
+                                                       
+                        </code></pre>
+                    </div>                                      
                     <!-- <div class="tile" id="codeblock">
                         <h3>Code Title</h3>
                         <pre><code class="language-gdscript">
