@@ -349,7 +349,77 @@ func _on_attack_area_2d_body_exited(body: Node2D) -> void:
         current_state = States.Chase
                                                        
                         </code></pre>
-                    </div>                                      
+                    </div>   
+                    <div class="tile" id="codeblock">
+                        <h3>Top Down Animation Controller</h3>
+                        <pre><code class="language-gdscript">
+                    <div class="tile" id="codeblock">
+                        <h3>Code Title</h3>
+                        <pre><code class="language-gdscript">
+################################################################################
+# if you are using the top down movement script then you can omit the movement keys section
+# make sure to call the function in the physics process
+# make sure that animation names in your animated sprite and animation names in this script are the same.
+################################################################################
+
+@export_group("Movement Keys")
+@export var left_action: String = "ui_left"
+@export var right_action: String = "ui_right"
+@export var up_action: String = "ui_up"
+@export var down_action: String = "ui_down"
+
+@onready var sprite: AnimatedSprite2D = $AnimatedSprite2D
+@export_group("Animations")
+# this var will controll how fast the animation plays.
+@export var animation_speed: float = 1.0
+# rename these with your animation names or rename your animation names to these. 
+@export var side_idle_anim: String = "side_idle"
+# if no up and down idle animations make all side_idle or what ever your animation is named
+@export var up_idle_anim: String = "up_idle"
+@export var down_idle_anim: String = "down_idle"
+@export var side_walk_anim: String = "side_walk"
+# if no up and down walk animations make all side_walk or what ever your animation is named
+@export var up_walk_anim: String = "up_walk"
+@export var down_walk_anim: String = "down_walk"
+
+# this var is used to determine which animation is playing on idle
+var current_direction: String = "left"
+
+
+#make sure to call this func in your physics process
+func player_animations() -> void:
+sprite.speed_scale = animation_speed
+# if button pressed -> do this
+if Input.is_action_pressed(left_action):
+    current_direction = "left"
+    sprite.play(side_walk_anim)
+    # if side walk sprite faces right, flip_h should be true otherwise this would be false
+    sprite.flip_h = true
+elif Input.is_action_pressed(right_action):
+    current_direction = "right"
+    sprite.play(side_walk_anim)
+    # if side walk sprite faces right, flip_h should be true otherwise this would be false
+    sprite.flip_h = false
+elif Input.is_action_pressed(up_action):
+    current_direction = "up"
+    sprite.play(up_walk_anim)
+elif Input.is_action_pressed(down_action):
+    current_direction = "down"
+    sprite.play(down_walk_anim)
+else:
+    match current_direction:
+        "left":
+            sprite.play(side_idle_anim)
+        "right":
+            sprite.play(side_idle_anim)
+        "up":
+            sprite.play(up_idle_anim)
+        "down":
+            sprite.play(down_idle_anim)                        
+                        </code></pre>
+                    </div>                           
+                        </code></pre>
+                    </div>                                   
                     <!-- <div class="tile" id="codeblock">
                         <h3>Code Title</h3>
                         <pre><code class="language-gdscript">
