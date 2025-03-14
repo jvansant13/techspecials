@@ -1,3 +1,83 @@
+#games-container{
+    display: flex;
+    margin: 1rem;
+    border-radius: 0.25rem;
+    min-height: 10rem;
+    background-color: var(--color04);
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.game_tile {
+    
+    width: 10rem;
+    height: 10rem;
+    text-align: center;
+    border-radius: 0.25rem;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    display: inline-block;
+    border: var(--color06) .2rem solid;
+    background-color: var(--color05)
+  }
+.new-game {
+    background-color: #e1f7d5; /* Special color for new games */
+    border: #e64d4d 5px solid; /* Highlight border */
+}
+.game_tile img {
+    border-radius: 0.25rem;
+    border: var(--color06) 0.15rem solid;
+    aspect-ratio: 1/1;
+    height: 8rem;
+    width: auto;
+}
+.game_tile h2 {
+    font-size: 1rem;
+}
+.game_tile a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+
+
+/* 
+.game_tilebar {
+    background-color: aliceblue;
+    margin: 1rem;
+    border-radius: 0.25rem;
+    display: flex;
+}
+
+.game_tile {
+    display: flex;
+    flex-direction: column;
+    transition: 200ms;
+    width: 10rem;
+    min-width: 10rem;
+    max-width: 15rem;
+    margin: 0.5rem;
+    background-color: var(--color05);
+    border-radius: 0.25rem;
+}
+
+.game_tile:hover{
+    transition: 200ms;
+    width: 15rem;
+}
+
+.game_tile img {
+    min-width: 4rem;
+    width: 5dvw;
+}
+
+.game_tile h2 {
+    font-size: medium;
+}
+ */
+
+
 .tilearea {
     margin: 1rem;
     background-color: var(--color04);
