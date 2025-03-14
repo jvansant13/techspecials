@@ -1,5 +1,6 @@
 #games-container{
     display: flex;
+    justify-content: center;
     margin: 1rem;
     border-radius: 0.25rem;
     min-height: 10rem;
@@ -11,6 +12,7 @@
 
 .game_tile {
     transition: 200ms;
+    min-width: 10rem;
     width: 10rem;
     height: 10rem;
     text-align: center;
@@ -23,6 +25,7 @@
   }
 .game_tile:hover{
     transition: 200ms;
+    min-width: 15rem;
     width: 20rem;
     background-color: rgba(255, 255, 255, 0.295);
 }

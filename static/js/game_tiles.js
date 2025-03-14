@@ -1,4 +1,3 @@
-// Sample game data (replace with dynamic data from your server or static list)
 const games = [
     {
         url: "Masons_asteroids",
@@ -36,26 +35,12 @@ const games = [
         date: "2024-10-10",
     },
 ];
-function isRecentGame(dateString) {
-    const gameDate = new Date(dateString);
-    const currentDate = new Date();
-    const diffTime = currentDate - gameDate;
-    const diffDays = diffTime / (1000 * 3600 * 24); // Convert time to days
-    return diffDays <= 30; // Return true if the game was added in the last 30 days
-}
-// Function to create game tiles
+
 function createGameTiles() {
     const base_url = "https://jvansant13.github.io/techspecials/"
     const container = document.getElementById('games-container');
-
     games.forEach(game => {
-    // Create the game tile div
     const gameTile = document.createElement('div');
-
-        
-    if (isRecentGame(game.date)) {
-        gameTile.classList.add('new-game');  // Add "new-game" class for recent games
-    }
     gameTile.classList.add('game_tile');
     // Create the anchor tag
     const gameLink = document.createElement('a');
@@ -82,42 +67,6 @@ function createGameTiles() {
     });
 }
 
+
 // Call the function to create the game tiles on page load
 window.onload = createGameTiles;
-
-
-// const fs = require('fs');
-// const path = require('path');
-
-// // Function to get folder details and create a dictionary
-// function getFolderDetails(givenFolder) {
-//   const folderDict = {};
-
-//   // Read the contents of the given folder
-//   const folders = fs.readdirSync(givenFolder);
-
-//   folders.forEach((folder) => {
-//     const folderPath = path.join(givenFolder, folder);
-
-//     // Check if it's a directory
-//     if (fs.statSync(folderPath).isDirectory()) {
-//       // Get the last modified date of the folder
-//       const stats = fs.statSync(folderPath);
-//       const lastModifiedDate = stats.mtime.toISOString().split('T')[0]; // YYYY-MM-DD format
-
-//       // Add folder information to the dictionary
-//       folderDict[folder] = {
-//         path: folderPath,
-//         name: folder,
-//         date: lastModifiedDate
-//       };
-//     }
-//   });
-
-//   return folderDict;
-// }
-
-// // Example usage
-// const givenFolder = 'Games/';
-// const folderDetails = getFolderDetails(givenFolder);
-// console.log(folderDetails);
