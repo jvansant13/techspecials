@@ -6,10 +6,11 @@
     background-color: var(--color04);
     padding-left: 1rem;
     padding-right: 1rem;
+    overflow: hidden;
 }
 
 .game_tile {
-    
+    transition: 200ms;
     width: 10rem;
     height: 10rem;
     text-align: center;
@@ -20,6 +21,11 @@
     border: var(--color06) .2rem solid;
     background-color: var(--color05)
   }
+.game_tile:hover{
+    transition: 200ms;
+    width: 20rem;
+    background-color: rgba(255, 255, 255, 0.295);
+}
 .new-game {
     background-color: #e1f7d5; /* Special color for new games */
     border: #e64d4d 5px solid; /* Highlight border */
@@ -28,7 +34,8 @@
     border-radius: 0.25rem;
     border: var(--color06) 0.15rem solid;
     aspect-ratio: 1/1;
-    height: 8rem;
+    min-height: 6rem;
+    height: 70%;
     width: auto;
 }
 .game_tile h2 {
