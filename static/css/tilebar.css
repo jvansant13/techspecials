@@ -1,0 +1,311 @@
+#games-container{
+    display: flex;
+    justify-content: center;
+    margin: 1rem;
+    border-radius: 0.25rem;
+    min-height: 10rem;
+    background-color: var(--color04);
+    padding-left: 1rem;
+    padding-right: 1rem;
+    overflow: hidden;
+}
+
+.game_tile {
+    transition: var(--transition-time);
+    min-width: 10rem;
+    width: 10rem;
+    height: 10rem;
+
+    text-align: center;
+    border-radius: 0.25rem;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    display: inline-block;
+    border: var(--color06) .2rem solid;
+    background-color: var(--color05)
+  }
+.game_tile:hover{
+    transition: var(--transition-time);
+    min-width: 15rem;
+    width: 20rem;
+    background-color: rgba(255, 255, 255, 0.295);
+}
+.new-game {
+    background-color: #e1f7d5; /* Special color for new games */
+    border: #e64d4d 5px solid; /* Highlight border */
+}
+
+.game_tile img {
+    border-radius: 0.25rem;
+    border: var(--color06) 0.15rem solid;
+    aspect-ratio: 1/1;
+    min-height: 6rem;
+    height: 70%;
+    width: auto;
+}
+.game_tile h2 {
+    font-size: 1rem;
+}
+.game_tile a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#script-list {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+
+}
+
+#script-list li{
+    transition: var(--transition-time);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 5rem;
+    width: 10rem;
+    text-align: center;
+    border-radius: 0.25rem;
+    border: var(--color06) 0.2rem solid;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    background-color: var(--color05);
+}
+
+#script-list li:hover{
+    transition: var(--transition-time);
+    width: 15rem;
+}
+#script-list li.active{
+    background-color: var(--color02);
+    transition: var(--transition-time);
+}
+#script-list li.active h2{
+    transition: var(--transition-time);
+    color: var(--color06);
+}
+#script-list img{
+    border-radius: 0.25rem;
+    border: var(--color06) 0.2rem solid;
+    background-color: var(--color06);
+    aspect-ratio: 1/1;
+    min-height: 3rem;
+    width: auto;
+}
+#script-list h2{
+    font-size: 1rem;
+}
+
+
+
+/* 
+.game_tilebar {
+    background-color: aliceblue;
+    margin: 1rem;
+    border-radius: 0.25rem;
+    display: flex;
+}
+
+.game_tile {
+    display: flex;
+    flex-direction: column;
+    transition: 200ms;
+    width: 10rem;
+    min-width: 10rem;
+    max-width: 15rem;
+    margin: 0.5rem;
+    background-color: var(--color05);
+    border-radius: 0.25rem;
+}
+
+.game_tile:hover{
+    transition: 200ms;
+    width: 15rem;
+}
+
+.game_tile img {
+    min-width: 4rem;
+    width: 5dvw;
+}
+
+.game_tile h2 {
+    font-size: medium;
+}
+ */
+
+
+.tilearea {
+    margin: 1rem;
+    background-color: var(--color04);
+    padding: 1rem;
+    border-radius: 0.25rem;
+    box-sizing: border-box;
+    overflow-y: hidden;
+}
+#script-content{
+    overflow-y: auto;
+    box-sizing: border-box;
+}
+
+code{
+    display: block;
+    max-height: 30rem;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+.tilebar {
+    display: flex;
+    box-sizing: border-box;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    padding: 1rem;
+    gap: 1rem;
+}
+.tilearea h2{
+    color: var(--color01);
+}
+
+.tile {
+    display: flex;
+    flex-direction: column;
+    border: black solid 2px;
+    min-width: 20rem;
+    max-width: 50rem;
+    background-color: var(--color05);
+    border-radius: 1rem;
+    box-sizing: border-box;
+    flex: 1;
+    height: 100%;
+    justify-items: center;
+    padding: 0.5rem;
+}
+
+.tile img{
+    width: 100%;
+    height: 12rem;
+}
+
+.tiledescription {
+    box-sizing: border-box;
+    color: var(--color02);
+    font-weight: 600;
+    display: flex;
+    height: 8rem;
+    flex-direction: column;
+    padding: 0.5rem;
+    align-items: center;
+}
+.tiledescription h3{
+    flex: 1;
+}
+
+.tiledescription a{
+    margin-top: 1rem;
+    border: black solid 2px;
+    border-radius: 1rem;
+    height: 2.5rem;
+    width: 10rem;
+    background-color: var(--color06);
+    color: var(--color03);
+    text-align: center;
+    align-content: center;
+}
+
+.tile a:hover{
+    background-color: var(--color03);
+    color: var(--color06)
+}
+
+.tile iframe {
+    position: relative; 
+    border-radius: 1rem;
+    height: 17rem;
+    width: 100%;
+}
+#icon {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+    flex: 1;
+    height: 6rem;
+    max-width: 6rem;
+    margin-bottom: 1.2rem;
+}
+#icon a {
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    border-radius: 1rem;
+    height: 100%;
+    width: 100%;
+}
+#icon img {
+    height: 100%;
+    width: 6rem;
+}
+
+.codebar{
+    display: flex;
+    box-sizing: border-box;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    height: 100%;
+    width: 100%;
+    padding: 1rem;
+    gap: 1rem;
+}
+
+.linkbar{
+    display: flex;
+    box-sizing: border-box;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    padding: 1rem;
+    gap: 1rem;
+}
+.links{
+    display: flex;
+    border: black solid 2px;
+    min-height: 5rem;
+    width: 10rem;
+    min-width: 10rem;
+    max-width: 50rem;
+    background-color: var(--color05);
+    border-radius: 1rem;
+    box-sizing: border-box;
+    flex: 1;
+    height: 100%;
+    justify-items: center;
+}
+.links a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex:1;
+    border-radius: 1rem;
+    width: 100%;
+    height: 6rem;
+}
+
+.links a:hover{
+    background-color: var(--color03);
+    color: var(--color06)
+}
+
+#codeblock {
+    min-width: 30rem;
+    max-height: 30rem;
+}
+
+
+
+

@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="static/images/blue_logo.png">
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/theme.css">
-    <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="static/css/styles.css">
+    <link rel="stylesheet" href="static/css/theme.css">
+    <link rel="stylesheet" href="static/css/header.css">
+    <link rel="stylesheet" href="static/css/navbar.css">
     <script src="https://kit.fontawesome.com/cb1c144ff3.js" crossorigin="anonymous"></script>
     <title>Davinci Games - Tech Specials</title>
 </head>
@@ -21,31 +21,32 @@
     <div class="mainContent">
         <div class="mainNav">
             <div class="navoption">
-                <a href="index.html">
+                <a href="#" data-content="home">
                     <i class="fa-solid fa-house"></i>
                     Home
                 </a>
             </div>
             <div class="navoption">
-                <a href="documentation.html">
+                <a href="#" data-content="services">
                     <i class="fa-solid fa-book"></i>
                     Documentation
                 </a>
             </div>
             <div class="navoption">
-                <a href="scripts.html">
+                <a href="#" data-content="about">
                     <i class="fa-solid fa-scroll"></i>
                     Scripts
                 </a>
             </div>
             <div class="navoption">
-                <a href="assets.html">
+                <a href="#" data-content="contact">
                     <i class="fa-solid fa-gamepad"></i>
                     Assets
                 </a>
             </div>
         </div>
-        <div class="content">
-    </div>
+        <div class="content" id="content">
+        </div>
+    <script src="static/js/main_info.js"></script>
 </body>
 </html>

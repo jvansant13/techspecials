@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="static/images/blue_logo.png">
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/theme.css">
-    <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/navbar.css">
-    <link rel="stylesheet" href="css/tilebar.css">
+    <link rel="stylesheet" href="static/css/styles.css">
+    <link rel="stylesheet" href="static/css/theme.css">
+    <link rel="stylesheet" href="static/css/header.css">
+    <link rel="stylesheet" href="static/css/navbar.css">
+    <link rel="stylesheet" href="static/css/tilebar.css">
+    <script src="/static/js/game_tiles.js"></script>
     <script src="https://kit.fontawesome.com/cb1c144ff3.js" crossorigin="anonymous"></script>
     <title>Davinci Games - Tech Specials</title>
 </head>
@@ -51,7 +52,122 @@
                 <h1>Welcome to DaVinci Academy Tech Specials</h1>
                 Providing assets, games,tutorials and documentation
             </div>
-            <div class="tilearea">
+            <div id="games-container"></div>
+            <script>
+                // // Sample game data (replace with dynamic data from your server or static list)
+                // const games = [
+                //     {
+                //     url: 'Masons_asteroids',
+                //     name: 'Masons_asteroids',
+                //     date: '2024-12-03',
+                //     },
+                //     {
+                //     url: 'Owens_Super_Awesome',
+                //     name: "Owen's Super Awesome",
+                //     date: "2025-14-03",
+                //     },
+                // ];
+                // function isRecentGame(dateString) {
+                //     const gameDate = new Date(dateString);
+                //     const currentDate = new Date();
+                //     const diffTime = currentDate - gameDate;
+                //     const diffDays = diffTime / (1000 * 3600 * 24); // Convert time to days
+                //     return diffDays <= 30; // Return true if the game was added in the last 30 days
+                // }
+                // // Function to create game tiles
+                // function createGameTiles() {
+                //     const base_url = "https://jvansant13.github.io/techspecials/"
+                //     const container = document.getElementById('games-container');
+            
+                //     games.forEach(game => {
+                //     // Create the game tile div
+                //     const gameTile = document.createElement('div');
+                //     gameTile.classList.add('game_tile');
+                        
+                //     if (isRecentGame(game.date)) {
+                //         gameTile.classList.add('new-game');  // Add "new-game" class for recent games
+                //     }
+                //     // Create the anchor tag
+                //     const gameLink = document.createElement('a');
+                //     gameLink.href = base_url + "Games/" + game.url;
+            
+                //     // Create the image
+                //     const gameImage = document.createElement('img');
+                //     gameImage.src = "static/images/" + game.url + ".png";
+                //     gameImage.alt = game.name;
+            
+                //     // Create the heading (h2)
+                //     const gameHeading = document.createElement('h2');
+                //     gameHeading.textContent = game.name;
+            
+                //     // Append image and heading to the link
+                //     gameLink.appendChild(gameImage);
+                //     gameLink.appendChild(gameHeading);
+            
+                //     // Append the link to the game tile
+                //     gameTile.appendChild(gameLink);
+            
+                //     // Append the game tile to the container
+                //     container.appendChild(gameTile);
+                //     });
+                // }
+            
+                // // Call the function to create the game tiles on page load
+                // window.onload = createGameTiles;
+            </script>
+
+
+<!-- 
+
+            <div class="game_tilebar">
+                <h1>Games</h1>
+                <div class="game_tile">
+                    <a href="https://jvansant13.github.io/techspecials/2d%20Knights%20Platformer/Game">
+                        <img src="static/images/knight_icon.png" alt="Knight Platformer">
+                    </a>
+                    <h2>Knight Platformer</h2>
+                </div>
+                <div class="game_tile" id = new_game>
+                    <a href="https://jvansant13.github.io/techspecials/Asteroids/Game">
+                        <img src="static/images/player_ship.png" alt="Asteroids">
+                    </a>
+                    <h2>Asteroids</h2>
+                </div>
+                <div class="game_tile" id = new_game>
+                    <a href="https://jvansant13.github.io/techspecials/Games/Masons_asteroids">
+                        <img src="static/images/player_ship.png" alt="Mason's Asteroids">
+                    </a>
+                    <h2>Masons Asteroids</h2>
+                </div>
+                <div class="game_tile" id = new_game>
+                    <a href="https://jvansant13.github.io/techspecials/Asteroids/Game">
+                        <img src="static/images/player_ship.png" alt="Asteroids">
+                    </a>
+                    <h2>Asteroids</h2>
+                </div>
+                <div class="game_tile" id = new_game>
+                    <a href="https://jvansant13.github.io/techspecials/Asteroids/Game">
+                        <img src="static/images/player_ship.png" alt="Asteroids">
+                    </a>
+                    <h2>Asteroids</h2>
+                </div>
+                <div class="game_tile" id = new_game>
+                    <a href="https://jvansant13.github.io/techspecials/Asteroids/Game">
+                        <img src="static/images/player_ship.png" alt="Asteroids">
+                    </a>
+                    <h2>Asteroids</h2>
+                </div>
+                <div class="game_tile" id = new_game>
+                    <a href="https://jvansant13.github.io/techspecials/Asteroids/Game">
+                        <img src="static/images/player_ship.png" alt="Asteroids">
+                    </a>
+                    <h2>Asteroids</h2>
+                </div>
+            </div> -->
+
+
+
+            <!-- <div class="tilearea">
                 <h2>Games</h2>
                 <div class="tilebar">
                     <div class="tile" id="icon">
@@ -96,7 +212,7 @@
                         </a>
                         <h2>Owen's Super Awesome V3</h2>
                     </div>
-            </div>
+            </div> -->
             <div class="tilearea">
                 <h2>Tutorials</h2>
                 <div class="tilebar">
