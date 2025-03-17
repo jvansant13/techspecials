@@ -15,7 +15,7 @@
     min-width: 10rem;
     width: 10rem;
     height: 10rem;
-    
+
     text-align: center;
     border-radius: 0.25rem;
     padding: 0.5rem;
@@ -60,6 +60,9 @@
 
 #script-list li{
     transition: var(--transition-time);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     height: 5rem;
     width: 10rem;
     text-align: center;
@@ -74,7 +77,25 @@
     transition: var(--transition-time);
     width: 15rem;
 }
-
+#script-list li.active{
+    background-color: var(--color02);
+    transition: var(--transition-time);
+}
+#script-list li.active h2{
+    transition: var(--transition-time);
+    color: var(--color06);
+}
+#script-list img{
+    border-radius: 0.25rem;
+    border: var(--color06) 0.2rem solid;
+    background-color: var(--color06);
+    aspect-ratio: 1/1;
+    min-height: 3rem;
+    width: auto;
+}
+#script-list h2{
+    font-size: 1rem;
+}
 
 
 
@@ -118,7 +139,20 @@
     margin: 1rem;
     background-color: var(--color04);
     padding: 1rem;
-    border-radius: 1rem;
+    border-radius: 0.25rem;
+    box-sizing: border-box;
+    overflow-y: hidden;
+}
+#script-content{
+    overflow-y: auto;
+    box-sizing: border-box;
+}
+
+code{
+    display: block;
+    max-height: 30rem;
+    white-space: pre-wrap;
+    word-wrap: break-word;
 }
 
 .tilebar {
