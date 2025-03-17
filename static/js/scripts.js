@@ -1,4 +1,3 @@
-// Define the list of Godot scripts with additional metadata (script, image, name, author)
 const godotscripts = [
     {
         script: "player_movement.gd",
