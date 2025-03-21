@@ -12,7 +12,7 @@ const godotscripts = [
     {
         script: "health_component.gd",
         img: "icon_heart.png",
-        name: "Basic Hitbox",
+        name: "Basic Health Node",
     },
     {
         script: "hurtbox_component.gd",
