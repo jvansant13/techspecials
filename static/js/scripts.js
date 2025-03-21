@@ -29,6 +29,11 @@ const godotscripts = [
         img: "icon_coin.png",
         name: "Coins",
     },
+    {
+        script: "collect_coin.gd",
+        img: "icon_coin.png",
+        name: "Collect Coin",
+    },
 
     // Add more scripts here as needed
 ];
