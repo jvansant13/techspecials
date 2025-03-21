@@ -24,6 +24,12 @@ const godotscripts = [
         img: "icon_area_damage.png",
         name: "Basic Hitbox",
     },
+    {
+        script: "coins.gd",
+        img: "icon_coin.png",
+        name: "Coins",
+    },
+
     // Add more scripts here as needed
 ];
 
