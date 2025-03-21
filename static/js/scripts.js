@@ -1,6 +1,6 @@
 const godotscripts = [
     {
-        script: "player_movement.gd",
+        script: "topdown_player.gd",
         img: "icon_lever.png",
         name: "Topdown Movement",
     },
