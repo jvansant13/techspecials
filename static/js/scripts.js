@@ -17,7 +17,7 @@ const godotscripts = [
     {
         script: "hurtbox_component.gd",
         img: "icon_hammer.png",
-        name: "Basic Hitbox",
+        name: "Basic Hurtbox",
     },
     {
         script: "hitbox_component.gd",
