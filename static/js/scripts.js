@@ -5,9 +5,9 @@ const godotscripts = [
         name: "Topdown Movement",
     },
     {
-        script: "hitbox_component.gd",
-        img: "icon_area_damage.png",
-        name: "Basic Hitbox",
+        script: "topdown_animations.gd",
+        img: "icon_character.png",
+        name: "Topdown Animations",
     },
     {
         script: "health_component.gd",
