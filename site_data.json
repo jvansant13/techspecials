@@ -1,0 +1,98 @@
+{
+    "videos": [
+        {
+            "url": "https://www.youtube.com/embed/LOhfqjmasi0?si=0dj7RK-dwQ-kwnM7",
+            "name": "Brackeys: How to make a video game"
+        },
+        {
+            "url": "https://www.youtube.com/embed/FmIo8iBV1W8?si=5OJbH3eWcjw-NN5D",
+            "name": "Kaan Alpar: How To Make Asteroids in Godot 4"
+        },
+        {
+            "url": "https://www.youtube.com/embed/videoseries?si=FlrMbDbHmfHUAlF2&amp;list=PL3cGrGHvkwn0zoGLoGorwvGj6dHCjLaGd",
+            "name": "Dev Worm: How to Create an RPG in Godot 4"
+        },
+        {
+            "url": "https://www.youtube.com/embed/videoseries?si=gqY6C60xuMt5Zvcq&amp;list=PLPuNhh82sRgmpJD-fnVEQfQ4Ii2N6PS2W",
+            "name": "Coding Quests: Godot Stardew Valley"
+        },
+        {
+            "url": "https://www.youtube.com/watch?v=ouqgx1qKSdY",
+            "name": "Godot GameDev Tutorial – 3D RPG Game"
+        }
+    ],
+    "games": [
+        {
+            "url": "Masons_asteroids",
+            "name": "Mason's Asteroids",
+            "date": "2024-12-03"
+        },
+        {
+            "url": "Owens_Super_Awesome",
+            "name": "Owen's Super Awesome",
+            "date": "2025-14-03"
+        },
+        {
+            "url": "Fabians_platformer",
+            "name": "Fabian's Platformer",
+            "date": "2025-14-03"
+        },
+        {
+            "url": "Peters_Parkour",
+            "name": "Peter's Legend of Legend",
+            "date": "2025-14-03"
+        },
+        {
+            "url": "Ritters_Platformer",
+            "name": "Ritter's Platformer",
+            "date": "2025-14-03"
+        },
+        {
+            "url": "Asteroids",
+            "name": "Asteroids",
+            "date": "2024-10-10"
+        },
+        {
+            "url": "Knight_platformer",
+            "name": "Brackeys Knight Platformer",
+            "date": "2024-10-10"
+        }
+    ],
+    "scripts":[
+        {
+            "script": "topdown_player.gd",
+            "img": "icon_lever.png",
+            "name": "Topdown Movement"
+        },
+        {
+            "script": "topdown_animations.gd",
+            "img": "icon_character.png",
+            "name": "Topdown Animations"
+        },
+        {
+            "script": "health_component.gd",
+            "img": "icon_heart.png",
+            "name": "Basic Health Node"
+        },
+        {
+            "script": "hurtbox_component.gd",
+            "img": "icon_hammer.png",
+            "name": "Basic Hurtbox"
+        },
+        {
+            "script": "hitbox_component.gd",
+            "img": "icon_area_damage.png",
+            "name": "Basic Hitbox"
+        },
+        {
+            "script": "coins.gd",
+            "img": "icon_coin.png",
+            "name": "Coins"
+        },
+        {
+            "script": "collect_coin.gd",
+            "img": "icon_coin.png",
+            "name": "Collect Coin"
+        }
+    ]
+}
