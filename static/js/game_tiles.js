@@ -34,6 +34,11 @@ const games = [
         name: "Brackeys Knight Platformer",
         date: "2024-10-10",
     },
+    {
+        url: "SpaceShooter",
+        name: "Space Shooter",
+        date: "2025-12-03",
+    }
 ];
 
 function createGameTiles() {
