@@ -43,6 +43,11 @@ const games = [
         url: "dodge_the_creeps",
         name: "Dodge The Creeps",
         date: "2025-12-09"
+    },
+    {
+        url: "noahs_game",
+        name: "Noah's Space Shooter",
+        date: "2026-02-25"
     }
 ];
 
