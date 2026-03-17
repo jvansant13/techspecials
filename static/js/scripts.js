@@ -2,38 +2,28 @@ const godotscripts = [
     {
         script: "topdown_player.gd",
         img: "icon_lever.png",
-        name: "Topdown Movement",
+        name: "Topdown Movement (8 direction)"
     },
     {
-        script: "topdown_animations.gd",
+        script: "item_pickup.gd",
+        img: "icon_coin.png",
+        name: "Pickup item (coin)"
+    },
+    {
+        "script": "dirtbike_movement.gd",
+        img: "icon_trophy.png",
+        name: "Sideview vehicle movement"
+    },
+    {
+        "script": "flappybird_movement.gd",
+        img: "icon_human_controller.png",
+        name: "Flappy Bird Style Movement"
+    },
+    {
+        "script": "platformer_movement.gd",
         img: "icon_character.png",
-        name: "Topdown Animations",
-    },
-    {
-        script: "health_component.gd",
-        img: "icon_heart.png",
-        name: "Basic Health Node",
-    },
-    {
-        script: "hurtbox_component.gd",
-        img: "icon_hammer.png",
-        name: "Basic Hurtbox",
-    },
-    {
-        script: "hitbox_component.gd",
-        img: "icon_area_damage.png",
-        name: "Basic Hitbox",
-    },
-    {
-        script: "coins.gd",
-        img: "icon_coin.png",
-        name: "Coins",
-    },
-    {
-        script: "collect_coin.gd",
-        img: "icon_coin.png",
-        name: "Collect Coin",
-    },
+        name: "platformer movement"
+    }
 
     // Add more scripts here as needed
 ];

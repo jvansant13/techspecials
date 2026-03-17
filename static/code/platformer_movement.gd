@@ -1,0 +1,29 @@
+extends CharacterBody2D
+## Basic Platformer Movement: left, right, jump, gravity
+
+## CharacterBody2D(rename to player or whatever you want)
+## |__sprite(AnimatedSprite2D/Sprite2D)
+## |__CollisionShape2D
+
+## Make sure you set up your input map with the names used below or update the direction names
+@export var speed = 300.0
+@export var jump_velocity = -400.0
+
+
+func _physics_process(delta: float) -> void:
+	# Add the gravity.
+	if not is_on_floor():
+		velocity += get_gravity() * delta
+
+	# Handle jump.
+	if Input.is_action_just_pressed("jump") and is_on_floor():
+		velocity.y = jump_velocity
+
+	# Get the input direction and handle the movement/deceleration.
+	var direction := Input.get_axis("left", "right")
+	if direction:
+		velocity.x = direction * speed
+	else:
+		velocity.x = move_toward(velocity.x, 0, speed)
+
+	move_and_slide()
