@@ -52,7 +52,7 @@ const games = [
     {
         url: "rites_of_magic",
         name: "Rites of magic",
-        date: "2026-02-25"
+        date: "2026-05-05"
     }
 
 ];
