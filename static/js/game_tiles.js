@@ -48,7 +48,13 @@ const games = [
         url: "noahs_game",
         name: "Noah's Space Shooter",
         date: "2026-02-25"
+    },
+    {
+        url: "rites_of_magic",
+        name: "Rites of magic",
+        date: "2026-02-25"
     }
+
 ];
 
 function createGameTiles() {
