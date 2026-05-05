@@ -58,6 +58,11 @@ const games = [
         url: "dwayne_the_spike",
         name: "Dwayne the Spikeball Johnson",
         date: "2026-05-05"
+    },
+    {
+        url: "slime_jump",
+        name: "Slime Jump",
+        date: "2026-05-05"
     }
 
 ];
