@@ -63,7 +63,12 @@ const games = [
         url: "slime_jump",
         name: "Slime Jump",
         date: "2026-05-05"
-    }
+    },
+    {
+        url: "Cube_guy",
+        name: "cube guy",
+        date: "202-05-12"
+    },
 
 ];
 
